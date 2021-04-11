@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <img
+          src="img_nature_wide.jpg"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="img_snow_wide.jpg"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="img_mountains_wide.jpg"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="img_lights_wide.jpg"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow"
+        />
+      </div>
+    </div>
+
+    <div class="modal" id="myModal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="img_nature_wide.jpg" width="100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numertext">2 / 4</div>
+          <img src="img_snow_wide.jpg" width="100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 /4</div>
+          <img src="img_mountains_wide.jpg" width="100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="img_lights_wide.jpg" width="100%" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <div class="column">
+            <img src="img_nature_wide.jpg" alt="Nature" onclick="currentSlide(1)" class="demo">
+        </div>
+        <div class="column">
+            <img src="img_snow_wide.jpg" alt="Snow" onclick="currentSlide(2)" class="demo">
+        </div>
+        <div class="column">
+            <img src="img_mountains_wide.jpg" alt="Mountains" onclick="currentSlide(3)" class="demo">
+        </div>
+        <div class="column">
+            <img src="img_lights_wide.jpg" alt="Lights" onclick="currentSlide(4)" class="demo"></div>
+      </div>
+    </div>
+  </body>
+</html>
