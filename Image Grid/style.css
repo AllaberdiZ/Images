@@ -13,17 +13,44 @@ body {
 }
 
 .column {
+  -ms-flex: 50%;
   float: left;
   width: 50%;
   padding: 10px;
 }
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
 .column img {
   margin-top: 12px;
+  vertical-align: middle;
 }
 
 .row::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.btn {
+  border: none;
+  padding: 10px 16px;
+  outline: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
