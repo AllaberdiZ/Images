@@ -1,8 +1,8 @@
 function myFunction(x){
     var expandImg = document.getElementById("expandedImg");
-    var imgtext = document.getElementById("imgText");
+    var imgText = document.getElementById("imgtext");
 
     expandImg.src = x.src;
-    imgtext = x.alt;
+    imgText.innerHTML = x.alt;
     expandImg.parentElement.style.display = "block"; 
 }
