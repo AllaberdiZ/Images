@@ -4,21 +4,25 @@
 }
 
 .image {
-  display: block;
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .overlay {
   position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
   background-color: #008cba;
-  overflow: hidden;
+  right: 100%;
+  left: 0;
   width: 0;
   height: 100%;
+  bottom: 0;
   transition: 0.5s ease;
+  overflow: hidden;
+}
+.container:hover .overlay {
+  width: 100%;
+  right: 0;
 }
 
 .text {
@@ -27,13 +31,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   white-space: nowrap;
-}
-
-.container:hover .overlay {
-  width: 100%;
-  left: 0;
 }
