@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
