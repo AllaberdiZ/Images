@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.3 ease;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.icon {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.fa-user:hover {
+  color: orange;
+}
