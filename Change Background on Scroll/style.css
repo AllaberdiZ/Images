@@ -1,0 +1,58 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url("img_snow.jpg");
+}
+
+.img2 {
+  background-image: url("img_girl.jpg");
+}
+
+.img3 {
+  background-image: url("img_lights.jpg");
+}
+
+.img4 {
+  background-image: url("img_nature_wide.jpg");
+}
+
+.img5 {
+  background-image: url("img_mountains.jpg");
+}
+
+.img6 {
+  background-image: url("ocean.jpg");
+}
+
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  border: 10px solid #f1f1f1;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+  z-index: 2;
+}
