@@ -15,6 +15,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+<<<<<<< HEAD
 
 .img1 {
   background-image: url("img_snow.jpg");
@@ -56,3 +57,5 @@ html {
   text-align: center;
   z-index: 2;
 }
+=======
+>>>>>>> 333ceb81f907402d1a15bed07cbcd6f2b5f5f76d
